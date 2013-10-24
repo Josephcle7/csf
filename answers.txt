@@ -1,5 +1,5 @@
-Name: ...
-Evergreen Login: ...
+Name: Joseph Clevenger
+Evergreen Login: clejos10
 Computer Science Foundations
 Programming as a Way of Life
 Fall 2013
@@ -19,20 +19,22 @@ Problem 1:
 
 Problem 2:
 
-...
+GC-content: 0.43029262963
 
 Problem 3:
 
-...
+The computer couldn't compute anything because we told it to look for the variable "lineum." When I commented out the line "lineum = 0" it stopped lineum from being a variable. When we tried to use that variable in "lineum = lineum + 1", the computer obviously failed because that variable doesn't exist.
+
+If you commented out "gc_count = 0" the same thing would happen because you're trying to use a variable that the computer doesn't know exists.
 
 Problem 4:
 
-...
+GC-content: 0.43029262963
+AT-content: 0.56970737037
 
 Collaboration:
 
-...
+None
 
 Reflection:
-
-...
+This assignment was actually very helpful. It had good easy to understand guided instructions and it allowed me to dive into a code, change it up, and see the results of my changes first hand. I honestly wouldn't do it any differently. My advice to future students is to study using things like terminal and commands.
