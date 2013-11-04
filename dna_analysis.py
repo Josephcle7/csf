@@ -54,6 +54,10 @@ total_count = 0
 # Number of G and C nucleotides seen so far.
 gc_count = 0
 at_count = 0
+c_count = 0
+g_count = 0
+a_count = 0
+t_count = 0
 
 
 # for each base pair in the string,
@@ -62,18 +66,43 @@ for bp in seq:
     total_count = total_count + 1
 
     # next, if the bp is a G or a C,
-    if bp == 'C' or bp == 'G':
+    if bp == 'C':
         # increment the count of gc
         gc_count = gc_count + 1
-    else:
-		  at_count = at_count + 1
-
+        c_count = c_count + 1
+    elif bp == 'G':
+        gc_count = gc_count + 1
+        g_count = g_count + 1
+    elif bp == 'A':
+        at_count = at_count + 1
+        a_count = a_count + 1
+    elif bp == 'T':
+        at_count = at_count + 1
+        t_count = t_count + 1
 
 
 # divide the gc_count by the total_count
 gc_content = float(gc_count) / total_count
 at_content = float(at_count) / total_count
+atgc_ratio = float (gc_count) / float (at_count)
+
+if gc_content > .6:
+    organism = 'High GC Content'
+elif gc_content < .4:
+    organism = 'Low GC Content'
+else:
+    organism = 'Moderate GC Content'
 # Print the answer
 print 'GC-content:', gc_content
 print 'AT-content:', at_content
+print 'A-count:', a_count
+print 'C-count:', c_count
+print 'G-count:', g_count
+print 'T-count:', t_count
+print 'This organism has', organism
+print 'AT/GC Ratio:', atgc_ratio, '\n\n'
+print 'Sum of all counts:', a_count + c_count + g_count + t_count
+print 'Total Count:', total_count
+print 'Length of sequence variable:', len(seq)
+
 
