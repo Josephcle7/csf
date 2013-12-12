@@ -1,0 +1,6 @@
+Read hw8-social.html on the course calendar,
+do the networkx tutorial (including installing networkx on your computer)
+and at least problem 1a.
+Commit the files social_network.py and social_answers.txt into your github repo by Friday, 5pm.
+
+And do self-evals and faculty evaluations on my.evergreen.edu
